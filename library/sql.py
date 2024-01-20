@@ -23,8 +23,6 @@ class SQL:
 		return self.conn
 
 	def run_query(self, df, table, operation_type='INSERT'):
-		cursor = self.conn.cursor()
-
 		if operation_type == 'SELECT':
 			self.select_data(df, table)
 		elif operation_type == 'INSERT':

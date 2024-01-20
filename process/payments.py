@@ -3,6 +3,7 @@ import datetime
 import pandas as pd
 from library.sql import SQL
 
+
 sql_conn = SQL(
 	driver="{ODBC Driver 18 for SQL Server}",
 	server=os.environ['SERVER'],
